@@ -1,0 +1,81 @@
+{
+  "Warehouses": [
+    {
+      "Id": 1,
+      "Code": "WH-001",
+      "Name": "\u4E2D\u5FC3\u4ED3\u5E93",
+      "Address": null,
+      "Active": true
+    }
+  ],
+  "Locations": [],
+  "Partners": [],
+  "Products": [
+    {
+      "Id": 1000,
+      "Sku": "MAT-001",
+      "Barcode": "690100000001",
+      "Name": "\u7EB8\u7BB1",
+      "Category": "\u5305\u88C5\u6750\u6599",
+      "Specification": "\u6807\u51C6",
+      "Unit": "\u4EF6",
+      "SafetyStock": 10,
+      "MaxStock": 100,
+      "BatchManaged": true,
+      "ExpiryManaged": false,
+      "IssueStrategy": "FIFO",
+      "Active": true
+    }
+  ],
+  "Stock": [
+    {
+      "Id": 2000,
+      "ProductId": 1000,
+      "WarehouseId": 1,
+      "LocationId": null,
+      "BatchNo": "LEGACY-IMPORT",
+      "ProducedAt": null,
+      "ExpiryDate": null,
+      "Status": "\u6B63\u5E38",
+      "ReceivedAt": "2026-10-04T11:36:01.839433Z",
+      "Quantity": 50
+    }
+  ],
+  "Transactions": [
+    {
+      "Id": 1,
+      "DocumentNo": "IN-INIT-0001",
+      "SourceDocumentNo": null,
+      "OccurredAt": "2026-10-04T11:36:01.839514Z",
+      "Type": "\u5165\u5E93",
+      "ProductId": 1000,
+      "WarehouseId": 1,
+      "Quantity": 50,
+      "Remark": "\u671F\u521D\u5E93\u5B58"
+    }
+  ],
+  "Stocktakes": [],
+  "Documents": [],
+  "TransferDocuments": [],
+  "StocktakeDocuments": [],
+  "Users": [
+    {
+      "Username": "admin",
+      "Password": "QoUKLIzJr\u002BYnE12ZGjChsw==.Vg8HG75\u002B95DG8Iak5KA/OPRK96QwKfMZjztzWkeTXl0=",
+      "DisplayName": "\u7CFB\u7EDF\u7BA1\u7406\u5458",
+      "Role": "\u7BA1\u7406\u5458",
+      "Phone": null,
+      "LastLoginAt": "2026-10-04T13:01:10.471237Z",
+      "Active": true
+    },
+    {
+      "Username": "operator",
+      "Password": "X6O/Urildp2aBBHGsWW8Ig==.SI95PE51HN1PhOrOt7xiHnxVe0xWyrezej6Cf0nZ5ns=",
+      "DisplayName": "\u4ED3\u5E93\u64CD\u4F5C\u5458",
+      "Role": "\u4ED3\u5E93\u64CD\u4F5C\u5458",
+      "Phone": null,
+      "LastLoginAt": null,
+      "Active": true
+    }
+  ]
+}

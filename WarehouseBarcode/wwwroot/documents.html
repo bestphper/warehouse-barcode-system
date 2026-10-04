@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>正式单据 - 仓库条码管理系统</title>
+  <link rel="stylesheet" href="/css/site.css">
+</head>
+<body>
+  <main class="main">
+    <section class="panel">
+      <h1>正式单据</h1>
+      <div class="toolbar">
+        <select id="document-type"><option>入库单</option><option>出库单</option><option>销售退货单</option></select>
+        <select id="warehouse" aria-label="仓库"></select>
+        <select id="product" aria-label="商品"></select>
+        <input id="quantity" type="number" min="0.01" value="1" aria-label="数量">
+        <input id="batch" placeholder="批次号">
+        <input id="expiry" type="date" aria-label="有效期">
+        <button id="add-line" type="button">添加明细</button>
+        <button id="create-document" type="button">创建草稿</button>
+      </div>
+      <table><thead><tr><th>商品</th><th>数量</th><th>批次</th><th>有效期</th></tr></thead><tbody id="document-lines"></tbody></table>
+    </section>
+    <section class="panel">
+      <div class="toolbar"><h2>单据列表</h2><button id="reload-documents" type="button">刷新</button></div>
+      <table><thead><tr><th>单号</th><th>类型</th><th>状态</th><th>操作</th></tr></thead><tbody id="documents"></tbody></table>
+    </section>
+  </main>
+  <script src="/js/documents.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>登录 - 仓库条码管理系统</title>
+  <link rel="stylesheet" href="/css/site.css">
+</head>
+<body class="auth-page">
+  <form id="login-form" class="auth-card">
+    <div class="brand">仓库条码管理系统</div>
+    <p class="subtle">安全、准确、高效的仓储作业平台</p>
+    <input id="username" class="field" placeholder="用户名" required>
+    <input id="password" class="field" type="password" placeholder="密码" required>
+    <div class="captcha-row"><input id="captcha-code" class="field" placeholder="验证码" maxlength="4" required><img id="captcha-image" class="captcha-image" alt="图形验证码" title="点击刷新"></div>
+    <button class="primary-button" type="submit">登录系统</button>
+    <div id="login-error" class="error" aria-live="polite"></div>
+  </form>
+  <script src="/js/login.js" defer></script>
+</body>
+</html>

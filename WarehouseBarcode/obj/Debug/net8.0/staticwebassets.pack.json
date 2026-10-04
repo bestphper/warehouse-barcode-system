@@ -1,0 +1,57 @@
+{
+  "Files": [
+    {
+      "Id": "/Users/billhu/workspace/归档/仓库条码/WarehouseBarcode/wwwroot/app.html",
+      "PackagePath": "staticwebassets/app.html"
+    },
+    {
+      "Id": "/Users/billhu/workspace/归档/仓库条码/WarehouseBarcode/wwwroot/assets/warehouse-background.svg",
+      "PackagePath": "staticwebassets/assets/warehouse-background.svg"
+    },
+    {
+      "Id": "/Users/billhu/workspace/归档/仓库条码/WarehouseBarcode/wwwroot/css/site.css",
+      "PackagePath": "staticwebassets/css/site.css"
+    },
+    {
+      "Id": "/Users/billhu/workspace/归档/仓库条码/WarehouseBarcode/wwwroot/documents.html",
+      "PackagePath": "staticwebassets/documents.html"
+    },
+    {
+      "Id": "/Users/billhu/workspace/归档/仓库条码/WarehouseBarcode/wwwroot/index.html",
+      "PackagePath": "staticwebassets/index.html"
+    },
+    {
+      "Id": "/Users/billhu/workspace/归档/仓库条码/WarehouseBarcode/wwwroot/js/documents.js",
+      "PackagePath": "staticwebassets/js/documents.js"
+    },
+    {
+      "Id": "/Users/billhu/workspace/归档/仓库条码/WarehouseBarcode/wwwroot/js/login.js",
+      "PackagePath": "staticwebassets/js/login.js"
+    },
+    {
+      "Id": "/Users/billhu/workspace/归档/仓库条码/WarehouseBarcode/wwwroot/js/lucide.js",
+      "PackagePath": "staticwebassets/js/lucide.js"
+    },
+    {
+      "Id": "/Users/billhu/workspace/归档/仓库条码/WarehouseBarcode/wwwroot/login.html",
+      "PackagePath": "staticwebassets/login.html"
+    },
+    {
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.WarehouseBarcode.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.build.WarehouseBarcode.props",
+      "PackagePath": "build\\WarehouseBarcode.props"
+    },
+    {
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.buildMultiTargeting.WarehouseBarcode.props",
+      "PackagePath": "buildMultiTargeting\\WarehouseBarcode.props"
+    },
+    {
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.buildTransitive.WarehouseBarcode.props",
+      "PackagePath": "buildTransitive\\WarehouseBarcode.props"
+    }
+  ],
+  "ElementsToRemove": []
+}
