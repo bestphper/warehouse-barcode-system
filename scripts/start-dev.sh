@@ -13,6 +13,14 @@ cleanup() {
 trap cleanup EXIT INT TERM
 
 echo "Starting ASP.NET Core backend at $BACKEND_URL"
+if command -v lsof >/dev/null 2>&1; then
+  EXISTING_BACKEND_PIDS="$(lsof -ti tcp:5188 2>/dev/null || true)"
+  if [[ -n "$EXISTING_BACKEND_PIDS" ]]; then
+    echo "Stopping stale backend process(es) on port 5188: $EXISTING_BACKEND_PIDS"
+    kill $EXISTING_BACKEND_PIDS 2>/dev/null || true
+    sleep 1
+  fi
+fi
 (
   cd "$ROOT_DIR"
   dotnet run --project WarehouseBarcode --no-restore --urls "$BACKEND_URL"

@@ -5,3 +5,5 @@ export type StockRow = { id: number; sku: string; barcode: string; product: stri
 export type Dashboard = { products: number; warehouses: number; partners: number; lowStock: number; recent: Array<{ documentNo: string; type: string; quantity: number; product: string; warehouse: string; occurredAt: string }> };
 export type Document = { id: number; documentNo: string; documentType: string; documentDate: string; warehouseId: number; partnerId?: number; status: string; remark?: string; lines: DocumentLine[] };
 export type DocumentLine = { productId: number; quantity: number; batchNo?: string; expiryDate?: string; locationId?: number };
+export type TransferDocument = { id: number; documentNo: string; fromWarehouseId: number; toWarehouseId: number; status: string; remark?: string; lines: Array<{ productId: number; quantity: number; batchNo?: string; sourceLocationId?: number; targetLocationId?: number }> };
+export type StocktakeDocument = { id: number; documentNo: string; warehouseId: number; status: string; remark?: string; lines: Array<{ productId: number; locationId?: number; batchNo?: string; bookQuantity: number; actualQuantity: number; difference: number }> };

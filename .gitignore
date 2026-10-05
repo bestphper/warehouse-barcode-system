@@ -1,0 +1,31 @@
+# IDE and local assistant files
+.cursor/
+.vscode/
+.idea/
+.vs/
+*.user
+*.suo
+
+# .NET build and user state
+**/bin/
+**/obj/
+.dotnet-home/
+
+# Frontend dependencies and build output
+frontend/node_modules/
+frontend/dist/
+frontend/.vite/
+*.tsbuildinfo
+
+# Local runtime databases and legacy exports
+WarehouseBarcode/warehouse.db
+WarehouseBarcode/warehouse-data.json
+WarehouseBarcode/*.sqlite-wal
+WarehouseBarcode/*.sqlite-shm
+
+# Logs and temporary files
+*.log
+*.tmp
+*.bak
+.DS_Store
+
