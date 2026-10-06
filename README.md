@@ -6,7 +6,7 @@
 
 登录后点击顶部“帮助”，打开左侧目录、右侧说明的帮助中心。内容涵盖登录、首页、库存查询、正式单据、调拨、盘点、报表、组织权限、账户和运维，并包含真实页面及详情弹窗截图。
 
-帮助地址：`/react/help/quick-start`；完整演示：`/react/help/demo`。截图仅展示演示资料，演示中的审核操作应在独立数据库副本上进行。
+帮助地址：`/react/help/overview`；完整演示：`/react/help/demo`。截图仅展示演示资料，演示中的审核操作应在独立数据库副本上进行。
 
 更新截图：安装 Playwright 后运行 `node scripts/capture-help.cjs`，默认访问 `http://127.0.0.1:5174/react`，可通过 `HELP_URL` 指定地址。脚本使用演示管理员登录并读取页面，不提交业务单据；截图保存到 `frontend/public/help`。
 
