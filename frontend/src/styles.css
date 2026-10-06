@@ -1,5 +1,14 @@
 :root { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; color: #17202a; background: #f4f6f8; }
 body { margin: 0; min-width: 320px; }
+.help-layout { display: grid; grid-template-columns: 220px minmax(0, 1fr); gap: 24px; align-items: start; }
+.help-directory { position: sticky; top: 20px; background: white; padding: 16px 0; }
+.help-directory h4 { padding: 0 20px; }
+.help-article { background: white; padding: 28px; min-width: 0; overflow-wrap: anywhere; }
+.help-article h2 { margin-top: 0; }
+.help-article .ant-steps { margin: 24px 0; }
+.help-mobile-directory { display: none; }
+@media (max-width: 900px) { .help-layout { grid-template-columns: minmax(0, 1fr); gap: 16px; } .help-directory { display: none; } .help-mobile-directory { display: block; width: 100%; } .help-article { padding: 16px; } }
+@media (max-width: 600px) { body:has(.help-layout) .ant-layout-sider { display: none; } body:has(.help-layout) .ant-layout-content { margin-left: 0 !important; } .help-article .ant-table { font-size: 13px; } }
 .login-shell { min-height: 100vh; display: grid; place-items: center; padding: 24px; background: linear-gradient(90deg, #071b2ccc, #071b2c55), url('/assets/warehouse-background.svg') center / cover; }
 .login-card { width: min(390px, 100%); background: #fff; box-shadow: 0 20px 60px #0006; }
 .login-brand { color: #15324b; margin-bottom: 8px !important; }
