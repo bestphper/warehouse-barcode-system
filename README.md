@@ -5,7 +5,7 @@
 ## 当前阶段
 
 - ASP.NET Core 8 浏览器应用，可在 macOS、Windows、Linux 开发运行。
-- JSON 本地持久化，首次启动自动写入正式业务初始资料。
+- SQLite 关系表持久化，首次启动自动创建完整表结构并加载正式业务初始资料。
 - 库存查询支持 SKU、商品名和条码搜索，适配键盘模拟型条码枪。
 - 入库、出库、退货入库流水；出库库存不足时拒绝提交。
 - 库存余额、低库存提示、仓库和往来单位概览。
@@ -45,7 +45,7 @@ npm run build
 
 构建后从后端访问 `http://localhost:5188/react/`。旧的 `wwwroot` 页面仍由根路径提供，React 页面完成验收后再切换为默认首页。
 
-首次运行会在 `WarehouseBarcode/warehouse-data.json` 创建系统初始资料，浏览器打开控制台显示的地址。
+首次运行会在 `WarehouseBarcode/warehouse.sqlite` 创建关系表并加载演示资料。数据库只保留这一份 SQLite 文件，浏览器打开控制台显示的地址。
 
 ## 后续阶段
 

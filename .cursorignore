@@ -4,8 +4,6 @@ WarehouseBarcode/obj/
 
 # SQLite 数据库（运行时数据）
 WarehouseBarcode/warehouse.sqlite
-WarehouseBarcode/warehouse.db
-WarehouseBarcode/warehouse-data.json
 
 # Frontend build output
 frontend/dist/

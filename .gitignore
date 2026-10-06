@@ -18,8 +18,6 @@ frontend/.vite/
 *.tsbuildinfo
 
 # Local runtime databases and legacy exports
-WarehouseBarcode/warehouse.db
-WarehouseBarcode/warehouse-data.json
 WarehouseBarcode/*.sqlite-wal
 WarehouseBarcode/*.sqlite-shm
 
