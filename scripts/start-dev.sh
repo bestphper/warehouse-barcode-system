@@ -38,13 +38,13 @@ if [[ "$ready" != 1 ]]; then
   exit 1
 fi
 
-echo "Starting React frontend at http://127.0.0.1:5173/react/"
+echo "Starting React frontend at http://127.0.0.1:5178/react/"
 (
   cd "$FRONTEND_DIR"
   npm run dev -- --host 127.0.0.1
 ) &
 FRONTEND_PID=$!
 
-echo "Open http://127.0.0.1:5173/react/"
+echo "Open http://127.0.0.1:5178/react/"
 echo "Press Ctrl+C to stop both services."
 wait "$FRONTEND_PID"
